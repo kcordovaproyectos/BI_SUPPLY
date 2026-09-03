@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "617b152c562263c9136b",
   "position": {
-    "x": 490.74716981132076,
-    "y": 19.320754716981131,
+    "x": 0,
+    "y": 0,
     "z": 7000,
-    "height": 40.573584905660375,
-    "width": 299.47169811320754,
+    "height": 87.871853546910756,
+    "width": 228.46681922196797,
     "tabOrder": 7000
   },
   "visual": {
@@ -22,7 +22,8 @@
                     "value": "REPORTE DE INVENTARIO",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "12pt"
+                      "fontSize": "20pt",
+                      "textDecoration": "underline"
                     }
                   }
                 ],
