@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "8e58c830c44274239bbf",
+  "position": {
+    "x": 390.27924528301889,
+    "y": 471.42641509433963,
+    "z": 5000,
+    "height": 248.27169811320755,
+    "width": 333.28301886792451,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_almacen"
+                    }
+                  },
+                  "Property": "tipo_almacen"
+                }
+              },
+              "queryRef": "dim_almacen.tipo_almacen",
+              "nativeQueryRef": "tipo_almacen",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_inventario"
+                    }
+                  },
+                  "Property": "Stock Promedio"
+                }
+              },
+              "queryRef": "fact_inventario.Stock Promedio",
+              "nativeQueryRef": "Stock Promedio"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fact_inventario"
+                  }
+                },
+                "Property": "Stock Promedio"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

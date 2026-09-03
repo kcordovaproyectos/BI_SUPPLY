@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json",
+  "version": "4.0",
+  "datasetReference": {
+    "byConnection": {
+      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/WS_SUPPLYKEVIN_DEV;initial catalog=SM_INVENTARIO;access mode=readonly;integrated security=ClaimsToken;semanticmodelid=cb1e3eb5-5d05-4b99-bfd6-97ca3a3231d4"
+    }
+  }
+}
